@@ -1,5 +1,11 @@
 {{ .Page.Scratch.Set "kg_include_caniuse" true }}
 {{ $periods := .Get "periods" | default "future_1,current,past_1,past_2" }}
-<p class="ciu_embed" data-feature="{{ .Get "feature" }}" data-periods="{{ $periods }}">
-    <a href="http://caniuse.com/#feat=css-variables">Can I Use {{ .Get "feature" }}?</a> Data on support for the {{ .Get "feature" }} feature across the major browsers from caniuse.com.
+{{ $feature := .Get "feature" }}
+{{ $accessible_colors := .Get "accessible_colors" | default "false" }}
+<p class="ciu_embed" data-feature="{{ $feature }}" data-periods="{{ $periods}}" data-accessible-colours="{{ $accessible_colors }}">
+    <picture>
+        <source type="image/webp" srcset="https://caniuse.bitsofco.de/image/{{ $feature }}.webp">
+        <source type="image/png" srcset="https://caniuse.bitsofco.de/image/{{ $feature }}.png">
+        <img src="https://caniuse.bitsofco.de/image/{{ $feature }}.jpg" alt="Data on support for the {{ $feature }} feature across the major browsers from caniuse.com">
+    </picture>
 </p>

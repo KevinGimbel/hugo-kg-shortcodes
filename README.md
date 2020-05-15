@@ -8,15 +8,15 @@ This repository holds a collection of shortcodes for the [Hugo](https://gohugo.i
 1. Get the theme. This is done by cloning the git repository to your `themes` directory.
 ```bash
 cd path/to/hugo/themes
-git clone https://github.com/kevingimbel/kg-hugo-shortcodes-theme.git 
+git clone https://github.com/kevingimbel/hugo-kg-shortcodes.git 
 ```
 
 2. Load the theme in your `config.toml` or `config.yml`
 ```toml
-theme = ["kg-hugo-shortcodes-theme"]
+theme = ["hugo-kg-shortcodes"]
 ```
 
-3. Include the hook partial in your footer.
+3. Include the hook partial in your footer (for example in `_baseof.html`).
 
 ```
 {{ partial "kg-shortcodes-hook.html" . }}
@@ -26,4 +26,4 @@ The hook will load additional JavaScript libraries if needed, see shortcode docu
 
 ## Documentation
 
-A detailed documentation of each shortcode can be found in the `documentation` directory. 
+A detailed documentation of each shortcode can be found in the `documentation` directory.
