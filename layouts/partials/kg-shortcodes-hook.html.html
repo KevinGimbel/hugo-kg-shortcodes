@@ -1,0 +1,9 @@
+{{ if ($.Page.Scratch.Get "kg_include_codepen") "true" }}
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+{{ end }}
+{{ if ($.Page.Scratch.Get "kg_include_caniuse") "true" }}
+<script async src="//cdn.jsdelivr.net/caniuse-embed/1.1.0/caniuse-embed.min.js"></script>
+{{ end }}
+{{ if ($.Page.Scratch.Get "kg_include_mastodon") "true" }}
+<script async src="https://mastodon.social/embed.js"></script>
+{{ end }}
