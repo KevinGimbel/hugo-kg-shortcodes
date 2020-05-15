@@ -11,6 +11,7 @@ The caniuse shortcode takes the following arguments.
 |----------|---------------|--------|-------------|
 | `feature` | - | String | The feature to inclide, e.g. `css-variables`, `css-grid`, etc. |
 | `periods` | `future_1,current,past_1,past_2` | String | How many past / future browsers to display. See periods below |
+| `accessible_colors` | `false` | `true` / `false` | Set to true if accessible colors should be used.|
 
 List of **periods**  which can be used:
 - `future_3`
@@ -35,7 +36,7 @@ List of **periods**  which can be used:
 **All options**
 
 ```html
-{{% caniuse feature="css-grid" periods="current,past_1,past_2" %}}
+{{% caniuse feature="css-grid" periods="current,past_1,past_2" accessible_colors="true" %}}
 ```
 
 ### Live Example
