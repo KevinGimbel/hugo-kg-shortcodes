@@ -1,0 +1,28 @@
+baseURL = "https://kevingimbel.github.io/hugo-kg-shortcodes"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+publishDir = "docs"
+
+
+[permalinks]
+    documentation = "/:title/"
+
+[params]
+    debug = false
+
+[params.kg_shortcodes.codepen]
+user = "kevingimbel"
+editable = true
+preview = false
+
+[languages]
+    [languages.en]
+        weight = 1
+        contentDir = "content/en"
+        languageCode = "en_US"
+        languageName = "English"
+    [languages.de]
+        weight = 2
+        contentDir = "content/de"
+        languageCode = "de_DE"
+        languageName = "Deutsch"
