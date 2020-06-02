@@ -1,0 +1,32 @@
+[ui_view_more_post]
+other = "View full post"
+
+[ui_permalink]
+other = "Permalink"
+
+[ui_continue_reading_about]
+other = "Continue reading about \"{{ .Title }}\""
+
+[ui_found_issue]
+other = "Found an issue? Edit this <a href=\"https://github.com/kevingimbel/hugo-kg-shortcodes/tree/gh-pages/content/{{ .File }}\">page on GitHub.com</a>"
+
+[ui_imprint]
+other = "Imprint"
+
+[ui_made_width]
+other = "Made in Europe 🇪🇺 with love, <a href=\"/thanks\">open source code</a> and <a href=\"https://gohugo.io/\" title=\"Hugo static site generator\" rel=\"nofollow\">hugo</a>.<span class=\"fg-accent\">&hearts;</span>."
+
+[ui_lang_available_in]
+other = "Read in: "
+
+[ui_lang_code_en]
+other = "English"
+
+[ui_lang_code_de]
+other = "Deutsch"
+
+[ui_back_to_navigation]
+other = "Back to navigation"
+
+[ui_view_doc_for]
+other = "Available shortcodes:"

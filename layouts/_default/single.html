@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{ with .Site.Params.debug }}
+{{ partial "debug.html" "_default/single.html" }}
+{{ end }}
+<main id="main" class="main">
+    <header>
+        <h1>{{ .Title }}</h1>
+        {{- with .Params.Subtitle }}
+        <blockquote>{{ . }}</blockquote>
+        {{ end -}}
+    </header>
+    <section>
+        {{ if .IsTranslated }}
+        <small>
+            <nav><span>{{ i18n "ui_lang_available_in" }}</span>
+                    {{ range .Translations }}
+                        <a href="{{ .Permalink }}">{{ i18n (printf "ui_lang_code_%s" .Lang) }}</a>
+                    {{ end }}
+            </nav>
+        </small>
+        <hr>
+        {{ end }}
+        <article>
+            {{ .Content }}
+        </article>
+    </section>
+</main>
+{{ end }}

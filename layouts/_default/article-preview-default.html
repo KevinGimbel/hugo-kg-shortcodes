@@ -1,0 +1,11 @@
+{{ if ne .WordCount  0 }}
+{{ if ne .File.LogicalName "_index.md" }}
+
+<article aria-labelledby="article-heading-{{ .File.UniqueID }}" aria-describedby="article-summary-{{ .File.UniqueID }}">
+    <small>{{ i18n "ui_html_published_on" . | safeHTML }}</small>
+    <h3><a id="article-heading-{{ .File.UniqueID }}" href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    <p id="article-summary-{{ .File.UniqueID }}">{{ .Summary }}</p>
+    <a href="{{ .Permalink }}" title="Continue reading about {{ .Title }}">View full documentation</a>
+</article>
+{{ end }}
+{{ end }}
