@@ -1,3 +1,22 @@
 {{ define "main" }}
-HOME / INDEX / MAIN
+{{ with .Site.Params.debug }}
+{{ partial "debug.html" "_default/index.html" }}
+{{ end }}
+<main id="main" class="main">
+    <section>
+        {{ if .IsTranslated }}
+        <small>
+            <nav><span>{{ i18n "ui_lang_available_in" }}</span>
+                    {{ range .Translations }}
+                        <a href="{{ .Permalink }}">{{ i18n (printf "ui_lang_code_%s" .Lang) }}</a>
+                    {{ end }}
+            </nav>
+        </small>
+        <hr>
+        {{ end }}
+        <article>
+            {{ .Content }}
+        </article>
+    </section>
+</main>
 {{ end }}
