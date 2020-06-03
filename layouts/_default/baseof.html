@@ -19,9 +19,15 @@
             {{ end }}
         </nav>
     </header>
+    <main>
     {{- block "main" . -}}
     {{- end -}}
-
+    </main>
+    <footer>
+        <hr>
+        <p><small>{{ i18n "ui_html_found_issue" . | safeHTML }}</small></p>
+        <p><small>{{ i18n "ui_html_made_with" | safeHTML }}</small></p>
+    </footer>
 
     {{ partial "kg-shortcodes-hook.html" . }}
 </body>

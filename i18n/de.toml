@@ -30,3 +30,9 @@ other = "Zurück zur Navigation"
 
 [ui_view_doc_for]
 other = "Verfügbare Shortcodes:"
+
+[ui_html_found_issue]
+other = "Fehler gefunden? <a href=\"https://github.com/kevingimbel/hugo-kg-shortcodes/tree/master/content/{{ .Lang }}/{{ .File }}\" title=\"Diese Seite auf GitHub.com bearbeiten\">Diese Seite bearbeiten</a> oder <a href\"https://github.com/kevingimbel/hugo-kg-shortcodes/issues\">einen Fehler melden</a>."
+
+[ui_html_made_with]
+other = "Mit <a href=\"https://newcss.net/\" title=\"new.css Website ansehen\">new.css</a> und <a href=\"https://gohugo.io\" title=\"hugo statis website generator Dokumentation\">hugo</a> gemacht"
