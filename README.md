@@ -29,4 +29,7 @@ The hook will load additional JavaScript libraries if needed, see shortcode docu
 
 ## Documentation
 
-A detailed documentation of each shortcode can be found in the `documentation` directory.
+A detailed documentation for each shortcode is available here:
+
+- [English documentation](https://kevingimbel.github.io/hugo-kg-shortcodes/)
+- [German documentation](https://kevingimbel.github.io/hugo-kg-shortcodes/de/)

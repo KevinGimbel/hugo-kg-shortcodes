@@ -1,0 +1,38 @@
+[ui_view_more_post]
+other = "Ganzen Beitrag ansehen"
+
+[ui_permalink]
+other = "Permalink"
+
+[ui_continue_reading_about]
+other = "Den ganzen Beitrag \"{{ .Title }}\" lesen"
+
+[ui_found_issue]
+other = "Fehler gefunden? Diese Seite <a href=\"https://github.com/kevingimbel/hugo-kg-shortcodes/tree/gh-pages/content/{{ .File }}\"> auf GitHub.com bearbeiten</a>"
+
+[ui_imprint]
+other = "Impressum"
+
+[ui_made_width]
+other = "In Europa 🇪🇺 mit Liebe, <a href=\"/thanks\">Open Source Code</a> und <a href=\"https://gohugo.io/\" title=\"Hugo static site generator\" rel=\"nofollow\">hugo</a> gemacht.<span class=\"fg-accent\">&hearts;</span>."
+
+[ui_lang_code_en]
+other = "English"
+
+[ui_lang_code_de]
+other = "German"
+
+[ui_lang_available_in]
+other = "Weitere Sprachen:"
+
+[ui_back_to_navigation]
+other = "Zurück zur Navigation"
+
+[ui_view_doc_for]
+other = "Verfügbare Shortcodes:"
+
+[ui_html_found_issue]
+other = "Fehler gefunden? <a href=\"https://github.com/kevingimbel/hugo-kg-shortcodes/tree/master/content/{{ .Lang }}/{{ .File }}\" title=\"Diese Seite auf GitHub.com bearbeiten\">Diese Seite bearbeiten</a> oder <a href\"https://github.com/kevingimbel/hugo-kg-shortcodes/issues\">einen Fehler melden</a>."
+
+[ui_html_made_with]
+other = "Mit <a href=\"https://newcss.net/\" title=\"new.css Website ansehen\">new.css</a> und <a href=\"https://gohugo.io\" title=\"hugo statis website generator Dokumentation\">hugo</a> gemacht"

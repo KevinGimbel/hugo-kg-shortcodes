@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{ with .Site.Params.debug }}
+{{ partial "debug.html" "_default/list.html" }}
+{{ end }}
+<main id="main">
+    {{ .Content }}
+
+    {{ range (where .Site.Pages "Section" .Section).GroupByDate "2006" }}
+        {{ range .Pages }}
+            {{- if (fileExists (printf "layouts/_default/article-preview-%s.html" .Params.Type)) -}}
+                {{ .Render (printf "article-preview-%s" .Params.Type) }}
+            {{ else }}
+                {{ .Render "article-preview-default" }}
+            {{- end }}
+        {{ end }}
+    {{ end }}
+</main>
+{{ end }}
