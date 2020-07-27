@@ -1,9 +1,9 @@
-{{ if ($.Page.Scratch.Get "kg_include_codepen") "true" }}
+{{ if eq ($.Page.Scratch.Get "kg_include_codepen") "true" }}
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 {{ end }}
-{{ if ($.Page.Scratch.Get "kg_include_caniuse") "true" }}
+{{ if eq ($.Page.Scratch.Get "kg_include_caniuse") "true" }}
 <script src="https://cdn.jsdelivr.net/gh/ireade/caniuse-embed/public/caniuse-embed.min.js"></script>
 {{ end }}
-{{ if ($.Page.Scratch.Get "kg_include_mastodon") "true" }}
+{{ if eq ($.Page.Scratch.Get "kg_include_mastodon") "true" }}
 <script async src="https://mastodon.social/embed.js"></script>
 {{ end }}
